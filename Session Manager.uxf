@@ -1,0 +1,16 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>300</x><y>280</y><w>380</w><h>240</h></coordinates><panel_attributes>Session Manager
+--
+- sessions : dictionary{id, token}
+--
+Responsibilities
+-- Notify Omni server of user login/logout
+-- Notify Omni server of message sent
+-- Notify Omni server of channel create/delete
+-- Notify Omni server if pair with other server requested
+-- Notify Omni server if pair request from other server accepted
+-- Notify users when message received
+-- Notify users when peer or channel list change
+-- Notify users when user goes online or offline
+-- Notify admins when new pair request received
+-- Handle all socket events
+-- Handle all Express events</panel_attributes><additional_attributes></additional_attributes></element></diagram>
