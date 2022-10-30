@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>480</y><w>210</w><h>80</h></coordinates><panel_attributes>User
+--
+- id : string
+- username : string
+- is_admin : boolean = false</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>480</y><w>210</w><h>80</h></coordinates><panel_attributes>Message
+--
+- id : string
+- channel_id : string
+- author_id : string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>480</y><w>210</w><h>90</h></coordinates><panel_attributes>Channel
+--
+- id : string
+- name : string
+- private : boolean = false
+- admin_only : boolean = false</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>280</y><w>670</w><h>300</h></coordinates><panel_attributes>Omni Database</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>320</y><w>210</w><h>50</h></coordinates><panel_attributes>Channel Table
+--
+- channels : dictionary</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>360</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>320</y><w>210</w><h>50</h></coordinates><panel_attributes>Message Table
+--
+- messages : dictionary</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>360</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>320</y><w>210</w><h>50</h></coordinates><panel_attributes>User Table
+--
+- messages : dictionary</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>360</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>
