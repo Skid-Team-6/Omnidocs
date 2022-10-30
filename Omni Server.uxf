@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>260</y><w>610</w><h>580</h></coordinates><panel_attributes>Omni Server
+--
+- online_users : dictionary{id, boolean}
+- online_peers : dictionary{id, boolean}
+--
+Public
++ login_user(id)
++ logout_user(id)
++ get_all_online_users() : array[id]
++ get_all_online_local_users() : array[id]
++ get_all_online_remote_users() : array[id]
++ get_online_users(id) : array[id]
++ get_online_local_users(id) : array[id]
++ get_online_remote_users(id) : array[id]
+
++ create_user(username) : string
++ delete_user(id)
++ get_user(id) : User
+
++ create_channel(name, private, admin_only) : string
++ delete_channel(id)
++ get_all_channels() : dictionary{id, array[id]}
++ get_channel(id) : Channel
+
++ request_pair(ip_address, port)
++ accept_pair(id)
++ unpair(id)
++ get_all_peers() : array[id]
++ get_all_online_peers() : array[id]
++ get_peer(id) : Peer
+
++ send_message(user, channel, content) : string
++ delete_message(id)
++ get_messages(channel, timestamp, n) : dictionary{id, Message}
++ get_message(id) : Message
+
++ on(event, callback) : EventHandler
+--
+Private
++ fire(event, data)</panel_attributes><additional_attributes></additional_attributes></element></diagram>
